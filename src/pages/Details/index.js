@@ -47,8 +47,6 @@ export default function Details({ match }) {
     }
   }
 
-  console.tron.log(meetup);
-
   return loading ? (
     <Loading>
       <FontAwesomeIcon icon="spinner" spin />
@@ -58,7 +56,7 @@ export default function Details({ match }) {
       <header>
         <strong>{meetup.title}</strong>
         <div>
-          <Link to={meetup.past ? '#' : `/edit/${id}`}>
+          <Link to={meetup.past ? '#' : `/meetup/edit/${id}`}>
             <ButtonEdit type="button" past={meetup.past}>
               <FontAwesomeIcon icon="pen" />
               Editar

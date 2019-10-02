@@ -19,7 +19,7 @@ export default function Meetup({ data }) {
       <strong>{data.title}</strong>
       <div>
         <span>{dateFormated}</span>
-        <Link to={`/details/${data.id}`}>
+        <Link to={`meetup/details/${data.id}`}>
           <FontAwesomeIcon icon="chevron-right" />
         </Link>
       </div>

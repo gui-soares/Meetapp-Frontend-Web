@@ -26,7 +26,7 @@ export default function Dashboard() {
         <Container>
           <header>
             <strong>Meus meetups</strong>
-            <Link to="/new">
+            <Link to="/meetup/new">
               <button type="button">
                 <FontAwesomeIcon icon="plus-circle" />
                 Novo Meetup
@@ -43,7 +43,7 @@ export default function Dashboard() {
       <Container>
         <header>
           <strong>Meus meetups</strong>
-          <Link to="/new">
+          <Link to="/meetup/new">
             <button type="button">
               <FontAwesomeIcon icon="plus-circle" />
               Novo Meetup
@@ -58,8 +58,6 @@ export default function Dashboard() {
       </Container>
     );
   }
-
-  console.tron.log(meetups);
 
   return loading ? (
     <Loading>
