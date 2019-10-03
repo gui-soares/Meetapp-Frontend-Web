@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import { Form, Input } from '@rocketseat/unform';
-import DatePicker, { registerLocale } from 'react-datepicker';
-import ptBR from 'date-fns/locale/pt-BR';
+import DatePicker from 'react-datepicker';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Yup from 'yup';
 
@@ -12,8 +11,6 @@ import history from '~/services/history';
 import BannerInput from './BannerInput';
 
 import { Container } from './styles';
-
-registerLocale('pt-BR', ptBR);
 
 const schema = Yup.object().shape({
   title: Yup.string().required('O título é obrigatório'),

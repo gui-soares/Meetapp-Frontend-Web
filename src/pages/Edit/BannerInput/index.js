@@ -23,7 +23,7 @@ export default function BannerInput({ meetup }) {
         path: 'dataset.file',
       });
     }
-  }, [ref, registerField]);
+  }, [ref]); //eslint-disable-line
 
   useEffect(() => {
     async function loadMeetupBanner() {
